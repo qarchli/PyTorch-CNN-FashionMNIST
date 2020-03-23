@@ -5,27 +5,27 @@ PyTorch Convolutional Neural Network trained on FashionMNIST dataset
 
 ## 1. Prepare the data (Extract Transform Load)
 
-1.1 Extract - Get the FashionMNIST dataset
+1.1 Extract - Get the FashionMNIST dataset.
 
-1.2 Transform - Put the data into tensor form
+1.2 Transform - Put the data into tensor form.
 
 1.3 Load - Put the data into an object to make it easily accessible. Using torchvision and DataLoader packages.
 
 ## 2. Build the model (network)
 
-2.1 The Network class must extend nn.Module
+2.1 The Network class must extend nn.Module.
 
-2.2 Define the layers in the constructor using nn package
+2.2 Define the layers in the constructor using nn package.
 
-2.3 Implement the forward() method
+2.3 Implement the forward() method.
 
 ## 3. Train the model
 
-3.1. Get batch from the training set (using the created DataLoader)
+3.1. Get batch from the training set (using the created DataLoader).
 
-3.2. Pass batch to network (call the network object directly)
+3.2. Pass batch to network (call the network object directly).
 
-3.3. Calculate the loss (difference between the predicted values and true values) **LOSS FUNCTION** (using functional package)
+3.3. Calculate the loss (difference between the predicted values and true values) **LOSS FUNCTION** (using functional package).
 
 3.4. Calculate the gradient of the loss function w.r.t the network's weights **BACKPROP** (backward() function)
 
@@ -35,22 +35,26 @@ PyTorch Convolutional Neural Network trained on FashionMNIST dataset
 
 3.7. Repeat steps 1-6 for as many epochs required to obtain the desired level of accuracy.
 
-## 4. Test the model
+## 4. Hyperparameters' tuning
 
-4.1. Get batch from the test set
+4.1. **RunBuilder** class allow automatic building of the all possible runs based on a dictionary of hyperparameters.
 
-4.2. Pass the batch to the network
+## 5. Test the model
 
-4.3. Compute the loss and accuracy
+5.1. Get batch from the test set.
 
-## 5. Analyze the results
+5.2. Pass the batch to the network.
 
-5.1 Create a confusion matrix (sklearn metrics)
+5.3. Compute the loss and accuracy.
 
-5.2 Track the loss and accuracy
+## 6. Analyze the results
 
-5.3 Save the results and weights to disk
+6.1 Compute accuracy and create a confusion matrix (sklearn metrics).
 
-# TODO:
-- Add a **RunManager** to factorize the training loop and save results to disk. 
-- Test the trained models and analyze the results
+6.2 Track the loss and accuracy.
+
+6.3 Save the results (as tensorboard runs) and model to disk.
+
+# Results
+
+For the sake of testing the code, several training sessions were run very quickly. The best result I got so far is an accuracy of **0.8693** corresponding to the Run(lr=0.01, batch_size=100, num_epochs=5). 

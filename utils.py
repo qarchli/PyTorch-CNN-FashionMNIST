@@ -1,5 +1,5 @@
-from collections import namedtuple
 from itertools import product
+from collections import namedtuple
 
 
 class RunBuilder:
