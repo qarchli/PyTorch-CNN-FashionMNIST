@@ -35,7 +35,7 @@ PyTorch Convolutional Neural Network trained on FashionMNIST dataset
 
 3.7. Repeat steps 1-6 for as many epochs required to obtain the desired level of accuracy.
 
-## 4. Hyperparameters' tuning
+## 4. Hyperparameter tuning
 
 4.1. **RunBuilder** class allow automatic building of the all possible runs based on a dictionary of hyperparameters that can be changed in `main.py`.
 
