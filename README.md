@@ -37,15 +37,17 @@ PyTorch Convolutional Neural Network trained on FashionMNIST dataset
 
 ## 4. Hyperparameters' tuning
 
-4.1. **RunBuilder** class allow automatic building of the all possible runs based on a dictionary of hyperparameters.
+4.1. **RunBuilder** class allow automatic building of the all possible runs based on a dictionary of hyperparameters that can be changed in `main.py`.
 
 ## 5. Test the model
 
-5.1. Get batch from the test set.
+5.1. Get a specific run.
 
-5.2. Pass the batch to the network.
+5.2. Get batch from the test set.
 
-5.3. Compute the loss and accuracy.
+5.3. Pass the batch to the network.
+
+5.4. Compute the loss and accuracy.
 
 ## 6. Analyze the results
 
@@ -64,3 +66,7 @@ Here's a plot, from Tensorboard, of the training accuracy evolution for the diff
 <img src='./train_accuracy_plot.png'/>
 
 The best result I got so far on the test set is an accuracy of **0.876** corresponding to the Run(lr=0.01, batch_size=1000, num_epochs=10). 
+
+# Usage 
+
+Run `python main.py` .
