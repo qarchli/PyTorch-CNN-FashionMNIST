@@ -57,4 +57,10 @@ PyTorch Convolutional Neural Network trained on FashionMNIST dataset
 
 # Results
 
-For the sake of testing the code, several training sessions were run very quickly. The best result I got so far is an accuracy of **0.8693** corresponding to the Run(lr=0.01, batch_size=100, num_epochs=5). 
+For the sake of testing the code, several training sessions were run very quickly. 
+
+Here's a plot, from Tensorboard, of the training accuracy evolution for the different runs:
+
+<img src='./train_accuracy_plot.png'/>
+
+The best result I got so far on the test set is an accuracy of **0.876** corresponding to the Run(lr=0.01, batch_size=1000, num_epochs=10). 

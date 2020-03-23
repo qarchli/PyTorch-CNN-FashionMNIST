@@ -104,7 +104,7 @@ def test(run):
 
 if __name__ == '__main__':
     # creating the hyperparams
-    params = OrderedDict(lr=[0.01], batch_size=[100, 1000], num_epochs=[5])
+    params = OrderedDict(lr=[0.01, 0.05], batch_size=[100, 1000], num_epochs=[10])
 
     # building runs from hyperparams (cartesian product of all params)
     runs = RunBuilder.get_runs(params)
